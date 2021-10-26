@@ -229,6 +229,13 @@
                 </div>
               </div>
               <!-- Product-->
+               <!-- Lista Vazia-->
+            <div class="carrinho-vazio" routerLink='/produto' *ngIf='qtdItensListaDeDesejos == 0'>
+              <div class="icon">
+              </div>
+              <h2>Sua lista de desejos está vazia!</h2>
+            </div>
+            <!-- Lista Vazia-->
             </div>
           </div>
         </div>
