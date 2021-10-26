@@ -35,6 +35,24 @@ textarea{
     color: red;
     }
 
+
+button {
+        width: 6rem;
+        background-color: #BCAD76;
+        color: #fff;
+        font-weight: 500;
+        transition: 0.533ms ease-in-out;
+    }
+    
+button:hover{
+        background-color: #fff;
+        color:  #BCAD76;
+        border: 1px solid #BCAD76;
+    }
+.fa{
+    color: #bcac76;
+}
+
 @media only screen  and (max-width:600px){
 
 .image{
