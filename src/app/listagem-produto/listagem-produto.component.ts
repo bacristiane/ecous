@@ -38,6 +38,8 @@ export class ListagemProdutoComponent implements OnInit {
 
   ngOnInit() {
 
+    window.scroll (0,0)
+
     this.getAllCategorias()
     this.getAllProdutos()
   }

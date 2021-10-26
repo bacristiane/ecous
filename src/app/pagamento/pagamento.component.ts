@@ -39,9 +39,11 @@ export class PagamentoComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    // if (environment.token == '') {
-    //   this.router.navigate(['/login']);
-    // }
+
+    window.scroll (0,0)
+    if (environment.token == '') {
+      this.router.navigate(['/login']);
+    }
 
     // if (localStorage.getItem('token') == null) {
     //   this.router.navigate(['/login']);

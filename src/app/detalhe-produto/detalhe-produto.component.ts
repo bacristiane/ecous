@@ -71,6 +71,8 @@ export class DetalheProdutoComponent implements OnInit {
 
   ngOnInit() {
 
+    window.scroll (0,0)
+
     let idProdutoR = this.route.snapshot.params['idProdutoR']
 
     console.log("ID: "+ idProdutoR);
