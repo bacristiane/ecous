@@ -9,7 +9,7 @@
                     <div class="tab-content">
     
                         <div class="tab-pane fade px-3 active show" id="loginModalTabRegister" role="tabpanel" aria-labelledby="loginModalLinkRegister">
-                          <p class="text-muted text-center">Crie sua conta</p>
+                          <p class="text-muted text-center">Crie sua conta e faça parte da família <b>eco</b>us ;)</p>
                           
                             <div class="form-group">
                               <label class="form-label" for="registerName">Nome</label>
@@ -27,12 +27,13 @@
                                 <label class="form-label" for="registerConfirmPassword">Confirme a senha</label>
                                 <input [(ngModel)]="user.senha"  class="form-control" id="registerConfirmPassword" type="password">
                               </div>
-                            <div class="form-group text-center">
-                              <button class="btn btn-block btn-outline-dark mt-4" type="submit" (click)='cadastrar()' ><i class="fa fa-user-o" aria-hidden="true"></i> Registre-se</button>
+                            <div class="form-group text-center d-flex justify-content-center">
+                              <button class="btn btn-block btn-outline-dark mt-2 col-6" type="submit" (click)='cadastrar()' ><i class="fa fa-user-o" aria-hidden="true"></i> Registre-se</button>
                             </div>
 
-                            <div class="form-group text-center">
-                              <a class="btn btn-block btn-outline-dark mt-4" routerLink='/login'> Voltar</a>
+                            <div class="form-group text-center ">
+                              <a class="btn btn-link text-muted mt-2" [routerLink]="['/login']"><i class="fa fa-chevron-left"></i>
+                                Voltar</a>
                             </div>
                           
                           <!-- <hr class="my-3 hr-text letter-spacing-2" data-content="OR CONNECT WITH"> -->
