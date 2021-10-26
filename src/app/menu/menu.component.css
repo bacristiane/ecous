@@ -66,3 +66,8 @@ i:hover{
     color: #bcac76;   
 }
 
+a{
+    cursor: pointer;
+}
+
+

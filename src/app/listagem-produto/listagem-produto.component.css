@@ -22,6 +22,11 @@ body {
     color: #212529;
 }
 
+img, a{
+    cursor: pointer;
+}
+
+
 @media (max-width: 983px){
     .responsivotoggle{
         display: flex;

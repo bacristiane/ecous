@@ -11,7 +11,28 @@ textarea{
     background-color: transparent;
 }
 
-.botaozinho{
-    color: #bcac76;
-    opacity: 2;
+a{
+    cursor: pointer;
 }
+
+button {
+    width: 6rem;
+    background-color: #BCAD76;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.533ms ease-in-out;
+}
+
+button:hover{
+    background-color: #fff;
+    color:  #BCAD76;
+    border: 1px solid #BCAD76;
+}
+
+.modal-header .close {
+
+    background-color: transparent;
+    color:  #BCAD76;
+    border: transparent;
+}
+

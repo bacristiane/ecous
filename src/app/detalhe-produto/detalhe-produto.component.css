@@ -6,6 +6,7 @@ a {
     color: #bcac76;
     text-decoration: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 body {
@@ -18,3 +19,26 @@ body {
     text-align: left;
     background-color: #fff;
 }
+
+
+.list-unstyled a{
+    cursor:default;
+}
+
+.close{
+    color: #BCAD76;
+}
+
+.btn-list{
+    width: 6rem;
+    background-color: #BCAD76;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn-list:hover{
+    background-color: #fff;
+    color:  #BCAD76;
+    border: 1px solid #BCAD76;
+}
+
