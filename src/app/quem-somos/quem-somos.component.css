@@ -75,22 +75,8 @@ p {
     background: #fff;
     box-shadow: 5px 3px 20px hsl(0, 0%, 70%);
     line-height: 3rem;
+    background-attachment: fixed;
 }
-
-body {
-    margin: 0;
-    font-family: "vremenagrotesk",sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.6;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
-}
-.text-body{
-    font-size: 1.1rem;
-}
-
 
 a{
     color: #000;
@@ -114,10 +100,25 @@ span  img:hover{
     opacity: .7;
 }
 
+body {
+    margin: 0;
+    font-family: "vremenagrotesk",sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+.text-body{
+    font-size: 1.1rem;
+}
+
+
 /*  CARDS DEV's */
 .content{
     position: relative;
-    /* width: 1100px; */
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,8 +134,10 @@ span  img:hover{
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 5px 80px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 80px rgb(0 0 0 / 14%);
     transition: 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: hsl(46, 34%, 80%);
 }
 
 .content .cardImg:hover{
@@ -182,12 +185,13 @@ span  img:hover{
 
 }
 
-@media only screen  and (max-width:600px){
-img {
-    margin-bottom: 1.5rem;
 
-}
-h2{
-    margin-top: 1.5rem;
-}
+@media only screen  and (max-width:600px){
+    img {
+        margin-bottom: 1.5rem;
+
+    }
+    h2{
+        margin-top: 1.5rem;
+    }
 }
