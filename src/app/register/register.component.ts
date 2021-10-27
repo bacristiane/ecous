@@ -14,6 +14,8 @@ export class RegisterComponent implements OnInit {
   user: Usuario = new Usuario
   confirmarSenha: string
 
+  termos: boolean
+
   constructor(
     private authService: AuthService,
     private router: Router,
@@ -47,5 +49,13 @@ export class RegisterComponent implements OnInit {
         this.alertas.showAlertSuccess('Usuário cadastrado com sucesso')
       })
     }
+  }
+
+  verificaCheckboxFalso() {
+    return !this.termos
+  }
+
+  verificaCheckbox() {
+    return this.termos
   }
 }
