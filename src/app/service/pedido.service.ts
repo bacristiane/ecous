@@ -68,4 +68,8 @@ export class PedidoService {
   
       return this.http.delete<Pedido>(`${this.endereco}/pedidos/produto_pedido/produtos/${idProduto}/pedidos/${idPedido}`, this.autorizacao);
     }
+
+    limparLista(id: number): Observable<Pedido> {
+      return this.http.post<Pedido>(`${this.endereco}/pedidos/produto_pedido/limpa-carrinho/${id}`, this.autorizacao)
+    }
 }

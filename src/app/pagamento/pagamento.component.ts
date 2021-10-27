@@ -24,6 +24,8 @@ export class PagamentoComponent implements OnInit {
   memoria: Produto[] = [];
   memoriaV: Produto[] = [];
 
+  listaRemocao: Produto[];
+
   idCarrinho = environment.pedidos;
   valorCarrinho: number;
 
@@ -48,9 +50,10 @@ export class PagamentoComponent implements OnInit {
     // if (localStorage.getItem('token') == null) {
     //   this.router.navigate(['/login']);
     // }
-
+    
     this.findByIdProdutosCarrinho();
     this.findByIdPedido();
+    this.findByIdProdutosCarrinho2()
   }
 
   findByIdPedido() {
@@ -130,10 +133,58 @@ export class PagamentoComponent implements OnInit {
 
   }
 
-  pedidofeito(){
-    this.router.navigate(['/home'])
-    alert('Pedido finalizado com sucesso!')
+  limpar(){
+    this.pedidoService.limparLista(environment.idUsuario).subscribe((resp: Pedido) => {
+      this.pedido = resp
+    })
   }
+
+  pedidofeito(){
+
+   console.log(environment.idUsuario);
+   console.log("quantidade:"+this.listaDeProdutos.length)
+   console.log("qtde"+this.qtdItensProdutos)
+
+    this.removerProdutosDaListaDoUsuario(environment.idUsuario)
+    // this.router.navigate(['/pedido'])
+    // alert('Pedido finalizado com sucesso!')
+  } 
+
+  removerProdutosDaListaDoUsuario(idUsuario: number) {
+    
+    console.log(this.listaRemocao.length)
+
+
+    for(let b = 0; b < this.qtdItensProdutos; b++) { 
+    console.log(this.listaRemocao[b].idProduto)
+    this.pedidoService.putProduto(this.listaRemocao[b].idProduto, idUsuario).subscribe(() => {
+    
+    }, erro => {
+    if(erro.status == 500 || erro.status == 400) {
+    this.alertas.showAlertDanger('Ocorreu um erro ao remover o produto!');
+    
+    }
+    
+    });
+    
+    }
+    
+    this.listaDeProdutos = this.listaRemocao
+    this.findByIdPedido()
+    this.findByIdProdutosCarrinho2() 
+
+    
+  
+    
+    // ATUALIZA A LISTA DO USUARIO DEIXANDO ZERADO, OU DEVERIA PELO MESNO KKKK (caso nao zere na primeira chame novamente o this.findByIdListaUsuario())
+    
+    }
+
+    findByIdProdutosCarrinho2() {
+      this.pedidoService.findAllByProdutosPedidos(environment.pedidos).subscribe((resp: Produto[]) => {
+        this.listaRemocao = resp;
+      })
+    }
 
 
 }
