@@ -227,3 +227,23 @@ a:hover {
 i{
     font-size: 16px;
 }
+
+.close{
+    color: #BCAD76;
+}
+
+.btn-modal{
+    width: 6rem;
+    background-color: #BCAD76;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.533ms ease-in-out;
+}
+
+.btn-modal:hover{
+    background-color: #fff;
+    color:  #BCAD76;
+    border: 1px solid #BCAD76;
+}
+
+
