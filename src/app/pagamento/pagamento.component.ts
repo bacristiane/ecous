@@ -169,14 +169,11 @@ export class PagamentoComponent implements OnInit {
     
     }
     
-    this.listaDeProdutos = this.listaRemocao
-    this.findByIdPedido()
+    this.findByIdProdutosCarrinho2() 
     this.findByIdProdutosCarrinho2() 
 
-    
-  
-    
-    // ATUALIZA A LISTA DO USUARIO DEIXANDO ZERADO, OU DEVERIA PELO MESNO KKKK (caso nao zere na primeira chame novamente o this.findByIdListaUsuario())
+    this.router.navigate(['/home'])
+    alert('Pedido finalizado com sucesso!')
     
     }
 

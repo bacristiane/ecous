@@ -61,7 +61,7 @@ export class PedidoService {
     /* DELETA UM PRODUTO DA BASE DE DADOS POR MEIO DE TABELAS MANY TO MANY */
     putProduto(idProduto: number, idPedido: number): Observable<Pedido> {
   
-      return this.http.delete<Pedido>(`${this.endereco}/pedidos/produto_pedido/produtos/${idProduto}/pedidos/${idPedido}`, this.autorizacao);
+      return this.http.put<Pedido>(`${this.endereco}/pedidos/produto_pedido/produtos/${idProduto}/pedidos/${idPedido}`, this.autorizacao);
     }
   
     removerItemDoCarrinho(idProduto: number, idPedido: number): Observable<Pedido> {
