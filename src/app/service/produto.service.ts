@@ -39,8 +39,8 @@ export class ProdutoService {
     return this.http.get<Usuario>(`${this.endereco}/usuarios/idusuario/${idUsuario}`)
   }
 
-  getAllByNomeProdutos(descricao: string): Observable<Produto[]>{
-    return this.http.get<Produto[]>(`${this.endereco}/produtos/descricaoproduto/${descricao}`)
+  getAllByNomeProdutos(nome: string): Observable<Produto[]>{
+    return this.http.get<Produto[]>(`${this.endereco}/produtos/nomeproduto/${nome}`)
   }
 
   findAllByProdutos(): Observable<Produto[]> {
