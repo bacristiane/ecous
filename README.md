@@ -17,7 +17,7 @@
 <br>
 
 <h2>🎇 Sobre a Ecous:</h2>
-<h5>Acreditamos que outro viver é possível. Que podemos cuidar da terra com o amor e
+<h4>Acreditamos que outro viver é possível. Que podemos cuidar da terra com o amor e
 carinho que ela cuida de nós.Fundada baseando seus princípios comerciais no projeto ODS (Objetivos de
 Desenvolvimento Sustentável) - da Organização das Nações Unidas, pensamos em como poderiamos combater as
 mudanças climáticas e seus impactos, e ainda assim oferecer produtos personalizados e com controle de qualidade
@@ -25,39 +25,37 @@ que só a Ecous pensaria.Como é feito esse controle de qualidade ? Simples, sel
 e marcas de produtos ecologicamente corretos e que possuem embalagens não prejudiciais ao meio ambiente e os
 vendemos aqui. Além de adquirirem produtos conscientes, a preços justos, essas vendas são convertidas em mudas
 de árvores nativas da floresta Amazônica.
-</h5>
+</h4>
 
 <br>
 
-<h2>🔗 Links:<h2>
+<h2>🔗 Links:</h2>
 
 
-<h4> <a href="https://drive.google.com/file/d/14EJ8_X7hctSv70RYg18UfN5DTdiifHf5/view">Wireframe</a></h4>
+<h3> <a href="https://drive.google.com/file/d/14EJ8_X7hctSv70RYg18UfN5DTdiifHf5/view">Wireframe</a></h3>
 
 
-<h4> <a href="https://ecous.netlify.app/home">Ecous</a></h4>
+<h3> <a href="https://ecous.netlify.app/home">Ecous</a></h3>
 
 <br>
 
 <h2>🌱 Projeto (muda)nça</h2>
 
-<h5>Pequenas ações, grandes impactos. Uma muda e já não estamos no mesmo lugar. Nosso projeto é fazer com que nossos clientes olhem para a Terra com outros olhos,com amor e esperança, por isso 40% do valor de suas compras será convertido pra compra de mudas nativas da floresta Amazônica, pensando em um futuro em que o desmatamento não será mais uma realidade, em que a poluição atmosférica será revertida e o clima será mais agradável para nós e para as próximas gerações.</h6>
-<b>Toda gentileza ao meio ambiente, a natureza agradece!</b>
+<h4>Pequenas ações, grandes impactos. Uma muda e já não estamos no mesmo lugar. Nosso projeto é fazer com que nossos clientes olhem para a Terra com outros olhos,com amor e esperança, por isso 40% do valor de suas compras será convertido pra compra de mudas nativas da floresta Amazônica, pensando em um futuro em que o desmatamento não será mais uma realidade, em que a poluição atmosférica será revertida e o clima será mais agradável para nós e para as próximas gerações.
+Toda gentileza ao meio ambiente, a natureza agradece!</h4>
 
 <br>
-<br>
 
-<h2>📷 Preview<h2>
-<br>
+<h2>📷 Preview</h2>
 <h3>Desktop:</h3>
-
-![](https://i.imgur.com/Frm4KNb.gif)
+<img src="https://user-images.githubusercontent.com/80595156/139321661-1c596863-5f66-45b9-a25f-e9b4536d3ad0.gif">
 
 <br>
 
 <h3>Mobile:</h3>
 
-![](https://i.imgur.com/GygSWPN.gif)
+![mobile](https://user-images.githubusercontent.com/80595156/139313878-dd7ba55e-eb9a-4c25-be74-2eafdf4a981f.gif)
+
 
 <br>
 
@@ -112,7 +110,7 @@ de árvores nativas da floresta Amazônica.
 
 <h2>💙 Nossos parceiros: </h2>
 
-<h3>Confira abaixo nossas lojas parceiras, que se ergueram com os mesmos princípios e a sede de mudança em que a <b>eco</b>us foi criada:</h3>
+<h4>Confira abaixo nossas lojas parceiras, que se ergueram com os mesmos princípios e a sede de mudança em que a <b>eco</b>us foi criada:</h4>
 
 <br>
 
